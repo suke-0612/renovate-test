@@ -1,46 +1,59 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  
   "extends": [
     "config:recommended"
   ],
   "dependencyDashboard": true,
   "automerge": false,
-  "schedule": [
-    "after 8am on monday", "before 10am on monday"
-  ],
+
+
+  "schedule": ["at 9am on monday"],
+
+
   "labels": [
-    "dependency","renovate"  ],
+    "dependency",
+    "renovate"
+  ],
+  "reviewers": ["suke-0612"],
+
 
   "major": {
     "enabled": false
   },
-  "reviewers": ["suke-0612"],
   "commitMessageExtra": "",
+
+
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": false
     },
     {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": true,
       "groupName": "react",
       "matchPackageNames": ["@types/react", "@types/react-dom"],
       "matchPackagePrefixes": ["react"]
     },
     {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": true,
       "groupName": "eslint",
       "matchPackageNames": ["@types/eslint", "babel-eslint"],
       "matchPackagePrefixes": ["@typescript-eslint/", "eslint"]
     },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": true,
       "matchPackagePatterns": ["nx"],
       "groupName": "nx"
     },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": true,
       "matchPackagePatterns": ["knip"],
       "groupName": "knip"
     }
-    
   ]
-
 }
