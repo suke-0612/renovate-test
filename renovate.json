@@ -5,21 +5,29 @@
   ],
   "dependencyDashboard": false,
   "automerge": false,
+  "schedule": [
+    "after 8am on monday", "before 10am on monday"
+  ],
+  "labels": [
+    "dependency","renovate"  ],
+
   "major": {
     "enabled": false
   },
-  "schedule": [
-    "every 1 hour after 00:00 and before 23:59 every day"
-  ],
+  "reviewers": ["suke-0612"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchPackagePatterns": ["eslint"],
+      "groupName": "react",
+      "matchPackageNames": ["@types/react", "@types/react-dom"],
+      "matchPackagePrefixes": ["react"]
+    },
+    {
       "groupName": "eslint",
-      "automerge": true
+      "matchPackageNames": ["@types/eslint", "babel-eslint"],
+      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"]
     },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
