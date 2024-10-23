@@ -54,6 +54,12 @@
       "enabled": true,
       "matchPackagePatterns": ["knip"],
       "groupName": "knip"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": true,
+      "matchPackagePatterns": ["slate","classnames"],
+      "groupName": "tekitou"
     }
   ]
 }
