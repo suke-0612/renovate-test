@@ -3,7 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "dependencyDashboard": false,
+  "dependencyDashboard": true,
   "automerge": false,
   "schedule": [
     "after 8am on monday", "before 10am on monday"
