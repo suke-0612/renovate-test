@@ -160,7 +160,7 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-jiti@^2.3.2:
+jiti@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.3.3.tgz#39c66fc77476b92a694e65dfe04b294070e2e096"
   integrity sha512-EX4oNDwcXSivPrw2qKH2LB5PoFxEvgtv2JgwW0bU858HoLQ+kutSvjLMUqBd0PeJYEinLWhoI9Ol0eYMqj/wNQ==
@@ -172,17 +172,17 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-knip@5.33.0:
-  version "5.33.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.33.0.tgz#efeae6a1b273d527ff8615c5b040132506116b7e"
-  integrity sha512-I9bNk5KpS1nSsD4ri7c/4yFbMF3LXktvYvF7reAKTGpzZ9GKbK8oVjEY5Ixl4JMRrKjhK6fzLnkPP+9Sq0+I6w==
+knip@5.33.3:
+  version "5.33.3"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.33.3.tgz#0a007e9927117958acf2ccfaca0f76f3fed801e2"
+  integrity sha512-saUxedVDCa/8p3w445at66vLmYKretzYsX7+elMJ5ROWGzU+1aTRm3EmKELTaho1ue7BlwJB5BxLJROy43+LtQ==
   dependencies:
     "@nodelib/fs.walk" "1.2.8"
     "@snyk/github-codeowners" "1.1.0"
     easy-table "1.2.0"
     enhanced-resolve "^5.17.1"
     fast-glob "^3.3.2"
-    jiti "^2.3.2"
+    jiti "^2.3.3"
     js-yaml "^4.1.0"
     minimist "^1.2.8"
     picocolors "^1.0.0"
