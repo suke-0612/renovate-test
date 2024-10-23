@@ -3,5 +3,35 @@
   "extends": [
     "config:recommended"
   ],
-  "dependencyDashboard": false
+  "dependencyDashboard": false,
+  "automerge": false,
+  "major": {
+    "enabled": false
+  },
+  "schedule": [
+    "every 1 hour after 00:00 and before 23:59 every day"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePatterns": ["nx"],
+      "groupName": "nx"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePatterns": ["knip"],
+      "groupName": "knip"
+    }
+    
+  ]
+
 }
