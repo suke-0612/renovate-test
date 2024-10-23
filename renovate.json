@@ -15,6 +15,7 @@
     "enabled": false
   },
   "reviewers": ["suke-0612"],
+  "commitMessageExtra": "",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
