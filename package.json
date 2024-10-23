@@ -1,3 +1,5 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "knip": "5.33.2"
+  }
 }
