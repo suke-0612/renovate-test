@@ -13,6 +13,7 @@ export default function Home() {
           priority
         />
         <div>knipアップデート対応のために変更を加える</div>
+        <div>knipアップデート対応のために変更を加える 5.36.0</div>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
