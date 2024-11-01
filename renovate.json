@@ -20,6 +20,7 @@
   "rebaseWhen": "never",
 
 
+  
   "major": {
     "enabled": false
   },
