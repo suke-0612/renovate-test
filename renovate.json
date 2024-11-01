@@ -1,70 +1,105 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  
   "extends": [
     "config:recommended"
   ],
   "dependencyDashboard": true,
   "automerge": false,
-
-
-  "schedule": ["at 9am on monday"],
-
-
+  "schedule": [
+    "at 9am on monday"
+  ],
   "labels": [
     "dependency",
     "renovate"
   ],
-
-"rebaseWhen": "never",
-
-  "reviewers": ["suke-0612"],
-
-
-
-  
+  "rebaseWhen": "never",
+  "reviewers": [
+    "suke-0612"
+  ],
   "major": {
     "enabled": false
   },
   "commitMessageExtra": "",
-
-
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "enabled": false
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "enabled": true,
       "groupName": "react",
-      "matchPackageNames": ["@types/react", "@types/react-dom"],
-      "matchPackagePrefixes": ["react"]
+      "matchPackageNames": [
+        "@types/react",
+        "@types/react-dom",
+        "react{/,}**"
+      ]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "enabled": true,
       "groupName": "eslint",
-      "matchPackageNames": ["@types/eslint", "babel-eslint"],
-      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"]
+      "matchPackageNames": [
+        "@types/eslint",
+        "babel-eslint",
+        "@typescript-eslint/{/,}**",
+        "eslint{/,}**"
+      ]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "enabled": true,
-      "matchPackagePatterns": ["nx"],
-      "groupName": "nx"
+      "groupName": "nx",
+      "matchPackageNames": [
+        "/nx/"
+      ]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "enabled": true,
-      "matchPackagePatterns": ["knip"],
-      "groupName": "knip"
+      "groupName": "knip",
+      "matchPackageNames": [
+        "/knip/"
+      ]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "enabled": true,
-      "matchPackagePatterns": ["slate","classnames"],
-      "groupName": "tekitou"
+      "groupName": "tekitou",
+      "matchPackageNames": [
+        "/slate/",
+        "/classnames/"
+      ]
     }
   ]
 }
