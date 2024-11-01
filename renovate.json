@@ -15,6 +15,9 @@
     "dependency",
     "renovate"
   ],
+
+"rebaseWhen": "never",
+
   "reviewers": ["suke-0612"],
 
   "rebaseWhen": "never",
